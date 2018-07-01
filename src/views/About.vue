@@ -24,6 +24,7 @@ We must now retrace our way a little. It was mentioned that upon first breaking 
 main
   x-inner()
   text-align left
+  margin 40px auto
 
 .topPic
   margin: 128px 12.5%;
@@ -93,6 +94,12 @@ main
   margin-left 12.5%
   padding 2px 5px
   display inline-block
+  position relative
+  &::before
+    content "<<"
+    position: absolute;
+    color: #000;
+    left: -30px;
 
 article
   padding 0 12.5% 0 25% 
